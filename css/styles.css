@@ -17,10 +17,11 @@ a {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #4d5ae5;
+        color: #2e2f42;
+        
 }
 .header-logo .logo-part {
-    color:  #2e2f42;
+    color: #4d5ae5;
 }
 
 .nav-link {
@@ -76,13 +77,22 @@ color: #404bbf;
 
 .hero-btn {
     border-radius: 4px;
-        padding-block: 16px;
-        padding-inline: 32px;
-        width: 169px;
-        height: 56px;
-        cursor: pointer;
-        color: #ffffff;
-    background-color: #4d5ae5
+    padding-block: 16px;
+    padding-inline: 32px;
+    width: 169px;
+    height: 56px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #4d5ae5;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #404bbf;
+}
 }
 
 .footer-page {
@@ -92,15 +102,16 @@ color: #404bbf;
 }
 
 .footer-logo {
-    color: #f4f4fd;
-    text-decoration: none;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2e2f42;
 }
 
 .footer-logo .logo-part {
     color: #4d5ae5;
-}
 
 .footer-page p {
     color: #f4f4fd;
