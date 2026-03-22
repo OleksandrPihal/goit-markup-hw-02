@@ -1,29 +1,48 @@
-body{
+/* ========================= */
+/* Базові стилі body та списки */
+/* ========================= */
+body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #fff;
+    margin: 0;
 }
-ul, ol {
-    list-style-type: none;
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
 a {
     text-decoration: none;
+    color: inherit;
+    /* щоб посилання не змінювали колір тексту */
 }
 
-.logo {
+/* ========================= */
+/* Логотип header */
+/* ========================= */
+.header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #2e2f42;
-        
-}
-.header-logo .logo-part {
-    color: #4d5ae5;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
+    /* Studio — темний */
 }
 
+.header-logo .logo-part {
+    color: #4d5ae5;
+    /* Web — акцентний */
+}
+
+/* ========================= */
+/* Навігація та контакти */
+/* ========================= */
 .nav-link {
     font-weight: 500;
     font-size: 16px;
@@ -32,25 +51,23 @@ a {
     color: #2e2f42;
 }
 
-.contacts {
-    font-style: normal;
-    
-}
-
 .contacts-link {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
-color: #404bbf;
+    color: #404bbf;
 }
 
+/* ========================= */
+/* Hero секція */
+/* ========================= */
 .hero {
     background-color: #2e2f42;
     text-align: center;
@@ -59,42 +76,136 @@ color: #404bbf;
 
 .hero-title {
     font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #fff;
-}
-
-.hero-title:hover,
-.hero-title:focus {
-
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
 }
 
 .hero-title-part {
     display: block;
 }
 
+.hero-title:hover,
+.hero-title:focus {
+    color: #dcdcff;
+    /* легке підсвічування при hover/focus */
+    outline: none;
+    transition: color 0.3s;
+}
+
 .hero-btn {
     border-radius: 4px;
-    padding-block: 16px;
-    padding-inline: 32px;
-    width: 169px;
-    height: 56px;
+    padding-block: 1em;
+    padding-inline: 2em;
     cursor: pointer;
     color: #ffffff;
     background-color: #4d5ae5;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03em;
+    /* відносне значення */
+    transition: background-color 0.3s;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #404bbf;
 }
+
+/* ========================= */
+/* Заголовки секцій (h2) */
+/* ========================= */
+.section-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 48px;
 }
 
+/* ========================= */
+/* Features cards */
+/* ========================= */
+.features-section ul li h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #434455;
+    margin-bottom: 8px;
+}
+
+.features-section ul li p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+}
+
+/* ========================= */
+/* Team секція */
+/* ========================= */
+.team-section {
+    background-color: #f8f8fc;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.team-section ul li {
+    background-color: #fff;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.team-section ul li h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #434455;
+    margin: 12px 0 4px 0;
+}
+
+.team-section ul li p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+    margin: 0;
+}
+
+/* ========================= */
+/* Portfolio секція */
+/* ========================= */
+.portfolio-section ul li h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #434455;
+    margin: 12px 0 4px 0;
+}
+
+.portfolio-section ul li p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+    margin: 0;
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
 .footer-page {
     background-color: #2E2F42;
     padding: 80px 0;
@@ -104,14 +215,18 @@ color: #404bbf;
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
+    /* як у header */
     text-transform: uppercase;
     text-decoration: none;
-    color: #2e2f42;
+    color: #f4f4fd;
+    /* Studio — світлий */
 }
 
 .footer-logo .logo-part {
     color: #4d5ae5;
+    /* Web — акцентний */
+}
 
 .footer-page p {
     color: #f4f4fd;
