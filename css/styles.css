@@ -49,3 +49,39 @@ a {
 .contacts-link:focus {
 color: #404bbf;
 }
+
+.hero {
+    background-color: #2e2f42;
+    text-align: center;
+    padding: 188px 0;
+}
+
+.hero-title {
+    font-weight: 700;
+        font-size: 56px;
+        line-height: 1.10;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+}
+
+.hero-title-part {
+    display: block;
+}
+
+.hero-btn {
+    border-radius: 4px;
+        padding-block: 16px;
+        padding-inline: 32px;
+        width: 169px;
+        height: 56px;
+        cursor: pointer;
+        color: #ffffff;
+    background-color: #4d5ae5
+}
+
+.footer-page {
+background-color: #2e2f42;
+width: 1440px;
+height: 312px;
+}
