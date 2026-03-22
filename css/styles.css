@@ -59,10 +59,15 @@ color: #404bbf;
 .hero-title {
     font-weight: 700;
         font-size: 56px;
-        line-height: 1.10;
+        line-height: 1.07;
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
+}
+
+.hero-title:hover,
+.hero-title:focus {
+
 }
 
 .hero-title-part {
@@ -81,7 +86,24 @@ color: #404bbf;
 }
 
 .footer-page {
-background-color: #2e2f42;
-width: 1440px;
-height: 312px;
+    background-color: #2E2F42;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    color: #f4f4fd;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-logo .logo-part {
+    color: #4d5ae5;
+}
+
+.footer-page p {
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
 }
